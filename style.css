@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #e2e8f0;
+    --accent-color: #38bdf8;
+    --border-color: #334155;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+
+.brand-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.line {
+    height: 1px;
+    width: 40px;
+    background-color: var(--border-color);
+}
+
+h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: white;
+    transition: background 0.2s;
+}
+
+.card:hover {
+    background: #2d3b52;
+    border-color: var(--accent-color);
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-right: 20px;
+    width: 40px;
+    text-align: center;
+}
+
+.card-text h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.card-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-arrow {
+    margin-left: auto;
+    color: #475569;
+}
+
+.card:hover .card-arrow {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .main-container { padding: 20px; }
+}
