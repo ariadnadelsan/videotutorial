@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/logo.svg" type="image/x-icon" />
+    <title>OnubHike</title>
+  </head>
+  
+  <body class="bg-light">
+    <!-- --------- NAVEGACIÓN ---------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="#">
+          <img
+            src="images/logo.svg"
+            alt="OnubHike Logo"
+            class="me-2"
+            style="height: 70px"
+          />
+          OnubHike
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rutas.html">Rutas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="comunidad.html"
+                >Comunidad</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-3">
+      <div
+        class="bg-video-container mb-4 rounded-3 position-relative"
+        style="height: 60vh"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-100 h-100"
+          style="object-fit: cover"
+        >
+          <source src="images/cascada.mp4" type="video/mp4" />
+          Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div
+          class="bg-black bg-opacity-25 position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="text-center text-white">
+            <h1 class="display-6 fw-bold">Descubre nuestra gran comunidad</h1>
+            <p class="lead">
+              Explora Huelva con la mejor compañía y para todas las edades
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- TARJETAS ---------------- -->
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/paisaje1.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Rutas cercanas"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100 text-center p-4">
+                  <h5 class="card-title fw-bold">
+                    Únete a nuestras rutas en grupo!
+                  </h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Quedamos amenudo y siempre hay muy buen ambiente,
+                    descubriremos lugares, experiencias y amigos nuevos! Esto es
+                    apto para todas las edades!
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary text-light fs-4 fw-bold mt-auto"
+                    data-bs-toggle="popover"
+                    data-bs-title="En construcción!"
+                    data-bs-content="Esta función está en desarrollo!!"
+                  >
+                    Ver rutas disponibles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- NOTICIAS ---------------- -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="fw-bold mb-4 text-center">Noticias de la Comunidad</h2>
+        </div>
+        <div class="row-12 mb-3">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active bg-primary text-light fw-bold"
+                aria-current="page"
+                href="#"
+                >Eventos Activos</a
+              >
+            </li>
+            <li class="nav-item">
+              <span
+                class="nav-link opacity-50 text-muted"
+                data-bs-toggle="tooltip"
+                data-bs-title="En construcción"
+              >
+                Eventos Anteriores
+              </span>
+            </li>
+            <li class="nav-item">
+              <span
+                class="nav-link opacity-50 text-muted"
+                data-bs-toggle="tooltip"
+                data-bs-title="En construcción"
+              >
+                Eventos Futuros
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-warning me-2">EVENTO</span>
+                <small class="text-muted">20 Diciembre 2025</small>
+              </div>
+              <h5 class="card-title fw-bold">Salida a Río Tinto</h5>
+              <p class="card-text">
+                Haremos una ruta circular de 5km, apto para todas las edades,
+                apúntate! Llevad mucho abrigo.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="badge bg-success">18 personas confirmadas</span>
+                </div>
+                <button class="btn btn-outline-primary btn-sm">Unirme</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <span class="badge bg-warning me-2">EVENTO</span>
+                <small class="text-muted">13 Enero 2026</small>
+              </div>
+              <h5 class="card-title fw-bold">Ruta de Hornos de Cal</h5>
+              <p class="card-text">
+                Nos veremos pronto para desayunar juntos e iniciaremos la marcha
+                juntos! es apto para todas las edades, no olvideis llevar agua!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="badge bg-success">50 personas confirmadas</span>
+                </div>
+                <button class="btn btn-outline-primary btn-sm">Unirme</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- NEWSLETTER ---------------- -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm bg-secondary text-white mb-5">
+            <div class="card-body p-4">
+              <div class="text-center mb-4">
+                <h2 class="fw-bold">Suscribete a nuestra NewsLetter</h2>
+                <p class="mb-0">prueba prueba prueba prueba prueba prueba</p>
+              </div>
+
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                      <label class="form-label fw-bold">Género</label>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="genero"
+                          id="mujer"
+                        />
+                        <label class="form-check-label" for="mujer">
+                          Mujer
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="genero"
+                          id="hombre"
+                        />
+                        <label class="form-check-label" for="hombre">
+                          Hombre
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="genero"
+                          id="otro"
+                        />
+                        <label class="form-check-label" for="otro">
+                          Otro
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label fw-bold"
+                        >Nombre</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="apellidos" class="form-label fw-bold"
+                        >Apellidos</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="apellidos"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                      <label for="correo" class="form-label fw-bold"
+                        >Correo electrónico</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="correo"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="correo2" class="form-label fw-bold"
+                        >Confirmar correo</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="correo2"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="senderismo" class="form-label fw-bold"
+                        >¿Cuánto te gusta el senderismo?</label
+                      >
+                      <input
+                        type="range"
+                        class="form-range"
+                        id="senderismo"
+                        min="0"
+                        max="10"
+                        step="1"
+                      />
+                      <div class="d-flex justify-content-between">
+                        <small>Poco</small>
+                        <small>Regular</small>
+                        <small>Mucho</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="mb-3">
+                      <label for="pueblo" class="form-label fw-bold"
+                        >Pueblo de donde eres</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="pueblo"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="apodo" class="form-label fw-bold"
+                        >Apodo</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="apodo"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="mascota" class="form-label fw-bold"
+                        >Mascota preferida</label
+                      >
+                      <select class="form-select" id="mascota">
+                        <option selected></option>
+                        <option value="pez">Pez</option>
+                        <option value="gato">Gato</option>
+                        <option value="perro">Perro</option>
+                        <option value="caballo">Caballo</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label fw-bold"
+                        >Número de teléfono</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefono"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-center mt-4">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg px-5 fw-bold border-4 border-light text-light"
+                  >
+                    Suscribirse
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- --------- FOOTER ---------------- -->
+    <footer class="bg-dark text-white mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="images/logo.svg"
+                alt="OnubHike Logo"
+                class="me-2"
+                style="height: 50px"
+              />
+              <h5 class="fw-bold mb-0">OnubHike</h5>
+            </div>
+            <p class="text-light">
+              Descubre las mejores rutas de senderismo en la provincia de
+              Huelva. Conecta con la naturaleza y con otros amantes del
+              senderismo.
+            </p>
+            <div class="d-flex mt-4">
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-light text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="rutas.html" class="text-light text-decoration-none"
+                  >Rutas</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="equipo.html" class="text-light text-decoration-none"
+                  >Equipo</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="comunidad.html" class="text-light text-decoration-none"
+                  >Comunidad</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Rutas populares</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Paraje Natural Marismas del Río Piedras</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Parque Natural de Doñana</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Hornos de Cal</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Castaño del Robledo y Picos de Aroche</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none"
+                  >Ribera del Jabugo</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Contacto</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span class="text-light">Huelva</span>
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a
+                  href="mailto:info@onubhike.com"
+                  class="text-light text-decoration-none"
+                  >iessansebastian@onubhike.es</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i>
+                <span class="text-light">+34 666 123 456</span>
+              </li>
+            </ul>
+
+            <div class="mt-4">
+              <h6 class="fw-bold">Suscríbete a nuestro newsletter</h6>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Tu email"
+                  aria-label="Email"
+                />
+                <button class="btn btn-primary text-light" type="button">
+                  Suscribir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">OnubHike</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3"
+              >Política de privacidad</a
+            >
+            <a href="#" class="text-light text-decoration-none me-3"
+              >Términos de uso</a
+            >
+            <a href="#" class="text-light text-decoration-none"
+              >Mapa del sitio</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      });
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>

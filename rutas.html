@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <title>OnubHike</title>
+  </head>
+
+  <body class="bg-light">
+    <!-- --------- NAVEGACIÓN ---------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="#">
+          <img src="images/logo.svg" alt="OnubHike Logo" class="me-2" style="height: 70px;">
+          OnubHike
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="rutas.html">Rutas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comunidad.html">Comunidad</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-3">
+      <div
+        class="bg-video-container mb-4  position-relative"
+        style="height: 60vh"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-100 h-100"
+          style="object-fit: cover"
+        >
+          <source src="images/rutas.mp4" type="video/mp4" class="rounded-3"/>
+        </video>
+
+        <div
+          class="bg-black bg-opacity-25 position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="text-center text-white">
+            <h1 class="display-6 fw-bold">
+              Rutas
+            </h1>
+            <p class="lead">
+              Los senderos más conocidos de Huelva
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- --------- BUSCADOR ---------------- -->
+      <div class="mb-5">
+        <div class="input-group input-group-lg shadow-sm rounded-3">
+          <span class="input-group-text bg-primary text-white border-0">
+            <i class="fas fa-search"></i>
+          </span>
+          <input 
+            type="search" 
+            class="form-control border-0 py-3" 
+            placeholder="Busca una ruta..." 
+            aria-label="Buscar ruta"
+          >
+        </div>
+      </div>
+      <!-- --------- TARJETAS ---------------- -->
+      <div class="row g-4">
+<div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta1.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Rutas cercanas"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Paraje Natural Marismas del Río Piedras</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Ruta circular de 12 km con dificultad moderada. Ideal para observar aves en un paisaje de marismas único. Recomendada para familias con niños mayores y mascotas con correa.
+                  </p>
+                  <a href="https://www.komoot.com/es-es/smarttour/e983683628/paraje-natural-marismas-del-rio-piedras-circular-desde-el-rompido" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta2.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Parque Natural de Doñana"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Parque Natural de Doñana</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Recorrido fácil de 8 km por sendero accesible. Perfecto para todos los niveles, incluyendo niños y personas mayores. Admite mascotas y ofrece paisajes de dunas y marismas espectaculares.
+                  </p>
+                  <a href="https://www.komoot.com/es-es/smarttour/e983597795/parque-natural-de-donana-circular-por-el-sendero-charco-de-la-boca" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta3.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Hornos de Cal"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Hornos de Cal</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Ruta moderada de 10 km que combina historia natural con patrimonio industrial. Apta para familias activas con niños acostumbrados a caminar. Las mascotas son bienvenidas en este recorrido.
+                  </p>
+                  <a href="https://www.komoot.com/es-es/smarttour/e983585106/hornos-de-cal-ruta-circular-desde-santa-ana-la-real-sl-a-201" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta4.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Senda del Tren Minero y minas del Río Tinto"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Senda del Tren Minero y minas del Río Tinto</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Itinerario de 14 km con dificultad moderada-alta. Descubre el fascinante paisaje marciano de las minas. Recomendado para adultos y adolescentes, no adecuado para niños pequeños ni mascotas.
+                  </p>
+                  <a href="https://www.komoot.com/es-es/smarttour/e1010556547/senda-del-tren-minero-y-minas-del-rio-tinto-circular-desde-nerva" 
+                  class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta5.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Castaño del Robledo y Picos de Aroche"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Castaño del Robledo y Picos de Aroche</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Ruta exigente de 18 km con desnivel considerable. Solo para senderistas experimentados con buena condición física. No recomendada para niños, mascotas o personas con vértigo.
+                  </p>
+                  <a href="https://www.komoot.com/es-es/smarttour/e984185938/santa-ana-la-real-castano-del-robledo-alajar-circular-por-el-parque-natural-de-sierra-de-aracena-y-picos-de-aroche" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta6.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Ribera del Jabugo"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Ribera del Jabugo</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Paseo fácil de 6 km junto al río Múrtiga, ideal para familias con niños de todas las edades. Terreno llano y sombreado perfecto para mascotas. Una de las rutas más populares y accesibles de la zona.
+                  </p>
+                  <a href="https://es.wikiloc.com/rutas-senderismo/ribera-de-jabugo-circular-4644145" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta7.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Sendero Charco Malo"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Sendero Charco Malo</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Ruta moderada de 5 km que conduce a cascadas espectaculares en un entorno de cuento. Apta para familias con niños acostumbrados a caminar. Las mascotas deben ir con correa por seguridad.
+                  </p>
+                  <a href="https://es.wikiloc.com/rutas-senderismo/cortelazor-sendero-charco-malo-59087513" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta8.webp"
+                    class="card-img-top object-fit-cover"
+                    alt="Sendero de Alájar"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Sendero de Alájar</h5>
+                  <p class="card-text text-muted flex-grow-1 ">
+                    Camino fácil de 1.7 km perfecto para iniciarse en el senderismo. Duración aproximada de 40 minutos. Ideal para niños, personas mayores y mascotas. Un paseo accesible para todos los niveles.
+                  </p>
+                  <a href="https://es.wikiloc.com/rutas-senderismo/01-07-2017-sendero-alajar-santa-ana-la-real-cascada-joyarancos-castano-de-robledo-huelva-18580426" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta9.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Ruta del Bosque Encantado"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Ruta del Bosque Encantado</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Recorrido moderado de 8 km entre alcornoques, encinas y castaños centenarios. Una de las rutas más bellas de la zona. Apta para familias con niños mayores de 8 años y mascotas con experiencia en senderismo.
+                  </p>
+                  <a href="https://es.wikiloc.com/rutas-senderismo/fuenteheridos-bosque-encantado-castanar-de-la-urraleda-fuenteheridos-sierra-de-aracena-70212853" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6">
+                <div class="ratio ratio-16x9 h-100">
+                  <img
+                    src="images/ruta10.jpg"
+                    class="card-img-top object-fit-cover"
+                    alt="Sendero el Talenque-Valdelarco"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body d-flex flex-column h-100  p-4">
+                  <h5 class="card-title mb-3 fw-bold">Sendero el Talenque-Valdelarco</h5>
+                  <p class="card-text text-muted flex-grow-1">
+                    Ruta fácil de 3 km con duración aproximada de 1.5 horas. Senda histórica perfecta para toda la familia, incluyendo niños pequeños y mascotas. Terreno accesible y bien señalizado para máximo disfrute.
+                  </p>
+                  <a href="https://es.wikiloc.com/rutas-senderismo/sl-a-128-sendero-el-talenque-valdelarco-sierra-de-aracena-15980886" class="btn btn-primary fs-6 fw-bold text-light btn-lg mt-auto">Ver más información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- ------------- TABLA ----------------- -->
+      <div class="mt-5">
+        <h2 class="text-center mb-4">Top Rutas más visitadas</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col">Ruta</th>
+                <th scope="col" class="text-center">Kilómetros</th>
+                <th scope="col" class="text-center">Dificultad</th>
+                <th scope="col " class="text-center  d-none d-md-block">Puntuación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-center">1</th>
+                <td>Ribera del Jabugo</td>
+                <td class="text-center">4,8 km</td>
+                <td class="text-center">
+                  <span class="badge bg-warning">Media</span>
+                </td>
+                <td class="text-center d-none d-md-block">
+                  <span class="fw-bold">9,8</span>
+                  <span class="text-warning">★</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">2</th>
+                <td>Sendero del Charco Malo</td>
+                <td class="text-center">1,7 km</td>
+                <td class="text-center">
+                  <span class="badge bg-warning">Media</span>
+                </td>
+                <td class="text-center d-none d-md-block">
+                  <span class="fw-bold">9,0</span>
+                  <span class="text-warning">★</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">3</th>
+                <td>Sendero Álajar - Los Madtroñeros</td>
+                <td class="text-center">1,7 km</td>
+                <td class="text-center">
+                  <span class="badge bg-success">Baja</span>
+                </td>
+                <td class="text-center d-none d-md-block">
+                  <span class="fw-bold">8,7</span>
+                  <span class="text-warning">★</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">4</th>
+                <td>Sendero el Talenque-Valdelarco</td>
+                <td class="text-center">3,0 km</td>
+                <td class="text-center">
+                  <span class="badge bg-warning">Media</span>
+                </td>
+                <td class="text-center d-none d-md-block">
+                  <span class="fw-bold">8,5</span>
+                  <span class="text-warning">★</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-center">5</th>
+                <td>Sendero de la Peña de Arias Montano</td>
+                <td class="text-center">2,5 km</td>
+                <td class="text-center">
+                  <span class="badge bg-danger">Alta</span>
+                </td>
+                <td class="text-center d-none d-md-block">
+                  <span class="fw-bold">8,3</span>
+                  <span class="text-warning">★</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- --------- FOOTER ---------------- -->
+    <footer class="bg-dark text-white mt-auto">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/logo.svg" alt="OnubHike Logo" class="me-2" style="height: 50px;">
+              <h5 class="fw-bold mb-0">OnubHike</h5>
+            </div>
+            <p class="text-light">
+              Descubre las mejores rutas de senderismo en la provincia de Huelva. 
+              Conecta con la naturaleza y con otros amantes del senderismo.
+            </p>
+            <div class="d-flex mt-4">
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-light text-decoration-none">Inicio</a>
+              </li>
+              <li class="mb-2">
+                <a href="rutas.html" class="text-light text-decoration-none">Rutas</a>
+              </li>
+              <li class="mb-2">
+                <a href="equipo.html" class="text-light text-decoration-none">Equipo</a>
+              </li>
+              <li class="mb-2">
+                <a href="comunidad.html" class="text-light text-decoration-none">Comunidad</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Rutas populares</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Paraje Natural Marismas del Río Piedras</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Parque Natural de Doñana</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Hornos de Cal</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Castaño del Robledo y Picos de Aroche</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">Ribera del Jabugo</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="fw-bold mb-3">Contacto</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span class="text-light">Huelva</span>
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@onubhike.com" class="text-light text-decoration-none">iessansebastian@onubhike.es</a>
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i>
+                <span class="text-light">+34 666 123 456</span>
+              </li>
+            </ul>
+            
+            <div class="mt-4">
+              <h6 class="fw-bold">Suscríbete a nuestro newsletter</h6>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Tu email" aria-label="Email">
+                <button class="btn btn-primary text-light" type="button">Suscribir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-4">
+        
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">OnubHike</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3">Política de privacidad</a>
+            <a href="#" class="text-light text-decoration-none me-3">Términos de uso</a>
+            <a href="#" class="text-light text-decoration-none">Mapa del sitio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

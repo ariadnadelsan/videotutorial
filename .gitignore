@@ -1,0 +1,6 @@
+# Ignorar todo en bootstrap
+libs/bootstrap/**
+
+# Excepto la carpeta dist
+!libs/bootstrap/dist/
+!libs/bootstrap/dist/**
