@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -20,14 +20,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="icon" href="images/logo.svg" type="image/x-icon" />
-    <title>OnubHike</title>
+    <title>OnubHike - Comunidad</title>
   </head>
-  
-  <body class="bg-light">
-    <!-- --------- NAVEGACIÓN ---------------- -->
+
+  <body class="bg-light d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
       <div class="container">
-        <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" href="#">
+        <a
+          class="navbar-brand fs-3 fw-bold d-flex align-items-center"
+          href="index.html"
+        >
           <img
             src="images/logo.svg"
             alt="OnubHike Logo"
@@ -71,7 +73,7 @@
       </div>
     </nav>
 
-    <main class="container mt-3">
+    <main class="container mt-3 flex-grow-1">
       <div
         class="bg-video-container mb-4 rounded-3 position-relative"
         style="height: 60vh"
@@ -84,7 +86,7 @@
           class="w-100 h-100"
           style="object-fit: cover"
         >
-          <source src="images/cascada.mp4" type="video/mp4" />
+          <source src="videos/cascada.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
 
@@ -100,7 +102,6 @@
         </div>
       </div>
 
-      <!-- --------- TARJETAS ---------------- -->
       <div class="row g-4">
         <div class="col-12">
           <div class="card border-0 shadow-sm">
@@ -140,7 +141,6 @@
         </div>
       </div>
 
-      <!-- --------- NOTICIAS ---------------- -->
       <div class="row mt-5">
         <div class="col-12">
           <h2 class="fw-bold mb-4 text-center">Noticias de la Comunidad</h2>
@@ -176,12 +176,16 @@
           </ul>
         </div>
         <div class="col-12 col-md-6 mb-4">
-          <div class="card border-0 shadow-sm h-100">
+          <div class="card hover_card border-0 shadow-sm h-100">
             <div class="card-body">
-              <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-warning me-2">EVENTO</span>
-                <small class="text-muted">20 Diciembre 2025</small>
-              </div>
+<div class="d-flex align-items-center mb-3">
+  <svg width="24" height="24" viewBox="0 0 100 100" class="svg-contenedor me-2">
+    <circle cx="50" cy="50" r="15" fill="orange" />
+    <circle cx="50" cy="50" r="15" fill="orange" class="circulo-pulso" />
+  </svg>
+  <span class="badge bg-warning me-1">EVENTO</span>
+  <small class="text-muted">13 Enero 2026</small>
+</div>
               <h5 class="card-title fw-bold">Salida a Río Tinto</h5>
               <p class="card-text">
                 Haremos una ruta circular de 5km, apto para todas las edades,
@@ -198,12 +202,16 @@
         </div>
 
         <div class="col-12 col-md-6 mb-4">
-          <div class="card border-0 shadow-sm h-100">
+          <div class="card hover_card border-0 shadow-sm h-100">
             <div class="card-body">
-              <div class="d-flex align-items-center mb-3">
-                <span class="badge bg-warning me-2">EVENTO</span>
-                <small class="text-muted">13 Enero 2026</small>
-              </div>
+<div class="d-flex align-items-center mb-3">
+  <svg width="24" height="24" viewBox="0 0 100 100" class="svg-contenedor me-2">
+    <circle cx="50" cy="50" r="15" fill="orange" />
+    <circle cx="50" cy="50" r="15" fill="orange" class="circulo-pulso" />
+  </svg>
+  <span class="badge bg-warning  me-1">EVENTO</span>
+  <small class="text-muted">20 Diciembre 2025</small>
+</div>
               <h5 class="card-title fw-bold">Ruta de Hornos de Cal</h5>
               <p class="card-text">
                 Nos veremos pronto para desayunar juntos e iniciaremos la marcha
@@ -220,14 +228,82 @@
         </div>
       </div>
 
-      <!-- --------- NEWSLETTER ---------------- -->
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-10">
+          <div class="card border-0 shadow-sm overflow-hidden rounded-3">
+            <div class="card-header bg-primary text-white py-3">
+              <h4 class="mb-0 text-center fw-bold">
+                <i class="fas fa-play-circle me-2"></i>Descubre las Rutas de
+                Huelva
+              </h4>
+            </div>
+            <div class="card-body p-0">
+              <video
+                id="videoPlayer"
+                class="w-100"
+                poster="images/miniatura.webp"
+              >
+                <source
+                  src="videos/video_senderos_Huelva.mp4"
+                  type="video/mp4"
+                />
+                Tu navegador no soporta el visionado de videos.
+              </video>
+              <div class="p-3 bg-light text-center border-top">
+                <div class="btn-group" role="group">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    onclick="playVid()"
+                  >
+                    <i class="fas fa-play"></i> Play
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    onclick="pauseVid()"
+                  >
+                    <i class="fas fa-pause"></i> Pause
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    onclick="stopVid()"
+                  >
+                    <i class="fas fa-stop"></i> Stop
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    onclick="volDown()"
+                  >
+                    <i class="fas fa-volume-down"></i> Vol -
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    onclick="volUp()"
+                  >
+                    <i class="fas fa-volume-up"></i> Vol +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row mt-5">
         <div class="col-12">
           <div class="card border-0 shadow-sm bg-secondary text-white mb-5">
             <div class="card-body p-4">
               <div class="text-center mb-4">
                 <h2 class="fw-bold">Suscribete a nuestra NewsLetter</h2>
-                <p class="mb-0">prueba prueba prueba prueba prueba prueba</p>
+                <p class="mb-0">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempore officia consequuntur minima in ab sit officiis omnis
+                  perspiciatis reiciendis vitae?
+                </p>
               </div>
 
               <form>
@@ -406,7 +482,6 @@
       </div>
     </main>
 
-    <!-- --------- FOOTER ---------------- -->
     <footer class="bg-dark text-white mt-auto">
       <div class="container py-5">
         <div class="row">
@@ -559,16 +634,41 @@
 
     <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+      // Lógica del Reproductor de Video
+      var v = document.getElementById("videoPlayer");
+
+      function playVid() {
+        v.play();
+      }
+
+      function pauseVid() {
+        v.pause();
+      }
+
+      function stopVid() {
+        v.pause();
+        v.currentTime = 0;
+      }
+
+      function volUp() {
+        if (v.volume < 1) v.volume += 0.1;
+      }
+
+      function volDown() {
+        if (v.volume > 0) v.volume -= 0.1;
+      }
+
+      // Inicialización de Popovers y Tooltips
       document.addEventListener("DOMContentLoaded", function () {
         var popoverTriggerList = [].slice.call(
-          document.querySelectorAll('[data-bs-toggle="popover"]')
+          document.querySelectorAll('[data-bs-toggle="popover"]'),
         );
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
           return new bootstrap.Popover(popoverTriggerEl);
         });
       });
       var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
       );
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);

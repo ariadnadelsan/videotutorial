@@ -35,7 +35,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: hsl(126, 100%, 96%);
+  --bs-light: #ebffed;
   --bs-dark: #22577a;
   --bs-primary-rgb: 87, 204, 153;
   --bs-secondary-rgb: 56, 163, 165;
@@ -2290,13 +2290,13 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: hsl(126, 100%, 96%);
-  --bs-table-border-color: rgb(187.68, 204, 189.312);
-  --bs-table-striped-bg: rgb(222.87, 242.25, 224.808);
+  --bs-table-bg: #ebffed;
+  --bs-table-border-color: rgb(188, 204, 189.6);
+  --bs-table-striped-bg: rgb(223.25, 242.25, 225.15);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: rgb(211.14, 229.5, 212.976);
+  --bs-table-active-bg: rgb(211.5, 229.5, 213.3);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: rgb(217.005, 235.875, 218.892);
+  --bs-table-hover-bg: rgb(217.375, 235.875, 219.225);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3518,19 +3518,19 @@ textarea.form-control-lg {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: hsl(126, 100%, 96%);
-  --bs-btn-border-color: hsl(126, 100%, 96%);
+  --bs-btn-bg: #ebffed;
+  --bs-btn-border-color: #ebffed;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(199.41, 216.75, 201.144);
-  --bs-btn-hover-border-color: rgb(187.68, 204, 189.312);
-  --bs-btn-focus-shadow-rgb: 199, 217, 201;
+  --bs-btn-hover-bg: rgb(199.75, 216.75, 201.45);
+  --bs-btn-hover-border-color: rgb(188, 204, 189.6);
+  --bs-btn-focus-shadow-rgb: 200, 217, 201;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(187.68, 204, 189.312);
-  --bs-btn-active-border-color: rgb(175.95, 191.25, 177.48);
+  --bs-btn-active-bg: rgb(188, 204, 189.6);
+  --bs-btn-active-border-color: rgb(176.25, 191.25, 177.75);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: hsl(126, 100%, 96%);
-  --bs-btn-disabled-border-color: hsl(126, 100%, 96%);
+  --bs-btn-disabled-bg: #ebffed;
+  --bs-btn-disabled-border-color: #ebffed;
 }
 
 .btn-dark {
@@ -3653,19 +3653,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: hsl(126, 100%, 96%);
-  --bs-btn-border-color: hsl(126, 100%, 96%);
+  --bs-btn-color: #ebffed;
+  --bs-btn-border-color: #ebffed;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: hsl(126, 100%, 96%);
-  --bs-btn-hover-border-color: hsl(126, 100%, 96%);
+  --bs-btn-hover-bg: #ebffed;
+  --bs-btn-hover-border-color: #ebffed;
   --bs-btn-focus-shadow-rgb: 235, 255, 237;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: hsl(126, 100%, 96%);
-  --bs-btn-active-border-color: hsl(126, 100%, 96%);
+  --bs-btn-active-bg: #ebffed;
+  --bs-btn-active-border-color: #ebffed;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: hsl(126, 100%, 96%);
+  --bs-btn-disabled-color: #ebffed;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: hsl(126, 100%, 96%);
+  --bs-btn-disabled-border-color: #ebffed;
   --bs-gradient: none;
 }
 
@@ -7756,8 +7756,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-light:hover, .link-light:focus {
-  color: RGBA(239, 255, 240, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(239, 255, 240, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(239, 255, 241, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(239, 255, 241, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-dark {
@@ -13364,5 +13364,64 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+.hover_card {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hover_card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.svg-contenedor {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.circulo-pulso {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: expandir-y-desaparecer 2s ease-out infinite;
+          animation: expandir-y-desaparecer 2s ease-out infinite;
+}
+
+.equip-icon {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  fill: currentColor;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@-webkit-keyframes expandir-y-desaparecer {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes expandir-y-desaparecer {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    opacity: 0;
   }
 }

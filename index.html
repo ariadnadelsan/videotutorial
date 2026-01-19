@@ -63,16 +63,6 @@
             <li class="nav-item">
               <a class="nav-link" href="comunidad.html">Comunidad</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-              >
-                <i class="fas fa-play-circle"></i> Videotutorial
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -91,7 +81,7 @@
           class="w-100 h-100"
           style="object-fit: cover"
         >
-          <source src="images/intro.mp4" type="video/mp4" />
+          <source src="videos/intro_Ed.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
 
@@ -487,7 +477,7 @@
           </div>
           <div class="modal-body bg-light text-center">
             <video id="videoPlayer" class="w-100 rounded shadow-sm mb-3" poster="images/miniatura.jpg">
-              <source src="images/videotutorial.mp4" type="video/mp4" />
+              <source src="videos/videotutorial.mp4" type="video/mp4" />
             </video>
 
             <div class="btn-group w-100" role="group">
@@ -532,30 +522,7 @@
       </div>
     </div>
 
-    <script>
-      var v = document.getElementById("videoPlayer");
 
-      function playVid() {
-        v.play();
-      }
-
-      function pauseVid() {
-        v.pause();
-      }
-
-      function stopVid() {
-        v.pause();
-        v.currentTime = 0;
-      }
-
-      function volUp() {
-        if (v.volume < 1) v.volume += 0.1;
-      }
-
-      function volDown() {
-        if (v.volume > 0) v.volume -= 0.1;
-      }
-    </script>
 
     <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
